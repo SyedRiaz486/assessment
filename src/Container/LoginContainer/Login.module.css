@@ -1,0 +1,92 @@
+.login_container {
+  padding-right: 60px;
+  background-image: url("../../assets/Images/DocuSign1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  height: 50vh;
+}
+
+.login_modal_position {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+.login_footer {
+  padding: 60px 200px;
+  background-color: #191823;
+  gap: 4em;
+}
+.col_1 h3,
+.col_2 h3 {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 127.273% */
+}
+
+.col_1 p,
+.col_2 p {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration-line: underline;
+}
+.col_2 p {
+  line-height: 1;
+}
+
+.login_footer_2 {
+  background-color: #d5ff00;
+  height: 50px;
+}
+
+.login_resp {
+  height: 200px;
+}
+
+@media (max-width: 1280px) {
+  .login_footer {
+    padding: 40px 80px;
+    gap: 0em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .login_footer {
+    padding: 40px 80px;
+    gap: 0em;
+  }
+  .col_1 h3,
+  .col_2 h3 {
+    font-size: 18px;
+  }
+
+  .col_1 p,
+  .col_2 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 786px) {
+  .login_footer {
+    text-align: center;
+  }
+  .login_container {
+    padding-right: 0px;
+    height: 50vh;
+  }
+  .login_modal_position {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+  }
+  .login_footer {
+    padding-top: 140px;
+  }
+}

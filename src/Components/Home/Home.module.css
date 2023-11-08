@@ -1,0 +1,136 @@
+.container {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-image: url("../../assets/Images/Ellipse1.png"),
+    url("../../assets/Images/Ellipse2.png"),
+    url("../../assets/Images/Ellipse3.png");
+  background-position: 0% -8em, 0% 130%, 100% 50%;
+  background-size: 10%, 10%, 20%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col_1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.col_2 {
+  justify-content: flex-start;
+}
+.col_1 div {
+  width: 350px;
+}
+.col_1 div h1 {
+  color: #5d5a88;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.col_1 div p {
+  padding: 10px 0;
+  color: #8d8ba7;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.col_2 div {
+  width: 80%;
+  border-radius: 40px;
+  border: 40px solid #fff;
+  background-color: #fff;
+}
+.col_2 div img {
+  width: 100%;
+}
+
+.btn_container_mob {
+  display: none;
+}
+
+.btn_container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn_container button {
+  width: 150px;
+  font-size: 12px;
+}
+
+.btn_container button:nth-child(2) {
+  background-color: #fff;
+  color: #5d5a88;
+}
+
+@media (max-width: 992px) {
+  .col_1 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn_container {
+    display: none !important;
+  }
+
+  .btn_container_mob {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    gap: 10px;
+  }
+
+  .btn_container_mob button {
+    font-size: 10px;
+    width: 50%;
+    padding: 16px 40px;
+  }
+  .col_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col_2 div {
+    border: 16px solid #fff;
+    width: 90%;
+  }
+  .btn_container_mob button img {
+    width: 10px;
+  }
+  .col_1 div h1 {
+    color: #5d5a88;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .col_1 div p {
+    color: #5d5a88;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .container {
+    padding-top: 30px;
+    background-image: url("../../assets/Images/Ellipse_1_mob.png"),
+      url("../../assets/Images/Ellipse_2_mob.png");
+    background-position: 0% 100%, 100% 0%;
+    background-size: 40%, 10%;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
